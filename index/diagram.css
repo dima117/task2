@@ -5,4 +5,42 @@
 .timeline {
     height: 32px;
     background-color: rgba(0, 0, 0, .1);
+
+    display: flex;
+}
+
+.timeline:before,
+.timeline:after {
+    display: block;
+    content: '';
+    
+    width: calc(100% / 32); 
+}
+
+/* состояние */
+
+.event-slot {
+    background-color: rgba(117, 192, 226, 0.5);
+}
+
+.event-slot--empty {
+    background-color: white;
+}
+
+.event-slot--empty:hover {
+    background-color: blue;
+}
+
+/* длительность */
+
+.event-slot--1h {
+    width: calc(100% / 16);
+}
+
+.event-slot--2h {
+    width: calc(100% / 16 * 2);
+}
+
+.event-slot--3h {
+    width: calc(100% / 16 * 3);
 }
