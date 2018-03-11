@@ -1,0 +1,27 @@
+.scale {
+    margin-left: 120px;
+
+    display: flex;
+    flex-direction: row;    
+}
+
+.hour {
+    flex: 1; /* часы */
+
+    text-align: center;
+
+    position: relative; /* для линий */
+}
+
+.hour:before {
+    display: block;
+    content: '';
+
+    width: 0;
+    height: calc(100vh - 60px);
+    border-left: 1px solid rgba(0, 0, 0, .3);
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
